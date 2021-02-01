@@ -13,6 +13,21 @@ public class Posto {
 		 * 
 		 */
 		
+		 /* lista[] = conjunto
+		  * lista = new BombaDeCombustivel[4], é como se eu tivesse b0, b1, b2, b3;
+		  *  	
+		  * lista[0] ==> b0
+		  * lista[1] ==> b1
+		  * lista[2] ==> b2
+		  * lista[3] ==> b3
+		  * 
+		  * lista[numCombustive] = bNumCombustivel
+		  * 
+		  * b0       = new BombaDeCombustivel("Etanol",2.999);
+		  * lista[0] = new BombaDeCombustivel("Etanol",2.999);
+		  * 
+		  */
+		
 		BombaDeCombustivel lista[];  // é o equivalente a ter BombaDeCombustivel b1, b2, b3...;
 		
 		lista = new BombaDeCombustivel[4]; // acabei de criar um vetor de tamanho 4 do tipo BombaDeCombustivel

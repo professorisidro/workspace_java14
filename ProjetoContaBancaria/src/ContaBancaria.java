@@ -71,5 +71,16 @@ public class ContaBancaria {
 			return false;
 		}
 	}
+	
+	public boolean transferir(double valor, ContaBancaria destino) {
+		if (saldo >= valor) {
+			this.saldo -= valor;      // debitei da minha conta
+			destino.creditar(valor);  // creditei na conta destino
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 
 }
