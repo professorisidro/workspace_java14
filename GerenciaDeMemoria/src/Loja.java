@@ -25,6 +25,7 @@ public class Loja {
 		
 		p2 = new Produto(p1.getId(), p1.getDescricao(), p1.getPreco());
 	
+		p2 = new Produto(3,"mouse",25.0);
 		
 	}
 
