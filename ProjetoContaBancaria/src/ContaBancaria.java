@@ -5,7 +5,15 @@ public class ContaBancaria {
 	private String cpfTitular;
 	private String nomeTitular;
 	private double saldo;
-
+	
+	public ContaBancaria(int numeroConta, int dv, String nome, String cpf) {
+		this.numeroConta = numeroConta;
+		this.digitoVerif = dv;
+		this.nomeTitular = nome;
+		this.cpfTitular  = cpf;
+		this.saldo       = 0.0;
+	}
+	
 	public int getNumeroConta() {
 		return numeroConta;
 	}

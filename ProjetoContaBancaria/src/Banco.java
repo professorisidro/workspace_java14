@@ -3,17 +3,18 @@ import java.util.Scanner;
 public class Banco {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		ContaBancaria c1  = new ContaBancaria();
+		ContaBancaria c1  = new ContaBancaria(10012,3,"Professor Isidro","987.654.321-00");
+		
+		//System.out.println(c1.exibirInfo());
 		
 		int opcao;
 		double valor;
 		
-		c1.setNumeroConta(100123);
-		c1.setDigitoVerif(4);
-		c1.setCpfTitular("987.654.321-00");		
-		c1.setNomeTitular("Professor Isidro");
-		c1.setSaldo(0.0);
-		
+//		c1.setNumeroConta(100123);
+//		c1.setDigitoVerif(4);  
+//		c1.setCpfTitular("987.654.321-00");		
+//		c1.setNomeTitular("Professor Isidro");
+//		c1.setSaldo(0.0);
 		
 		do {
 			System.out.println("Banco IsiTaú - Feito procê ");
@@ -29,7 +30,7 @@ public class Banco {
 				System.out.print("Digite o valor do saque:");
 				valor = teclado.nextDouble();				
 				if (c1.debitar(valor)) {
-					System.out.println("Saque autorizado!");
+					 
 				}
 				else {
 					System.out.println("Saque não autorizado");
