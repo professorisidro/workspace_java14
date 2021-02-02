@@ -17,11 +17,5 @@ public class Carro extends Veiculo {
 	public void frear() {
 		System.out.println("Carro "+super.marca+"/"+this.modelo+" freia na mão IIIICCCCHHHHH");
 		
-	}
-
-	
-	
-	
-	
-
+	}	
 }
