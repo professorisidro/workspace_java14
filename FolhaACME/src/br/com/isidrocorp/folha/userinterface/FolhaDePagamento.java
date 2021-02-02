@@ -32,7 +32,6 @@ public class FolhaDePagamento {
 		lista.add(new Horista(1237, "Maria Moreira", 120, 78.54f));
 		lista.add(new Empreiteiro(1238, "Manoel Marques", 7950.00f));
 		
-		
 		lista.remove(2);
 		for (Funcionario f : lista) {
 			System.out.println(f.getNumRegistro()+" - "+f.getNome()+ "  R$ "+f.calcularSalario());
