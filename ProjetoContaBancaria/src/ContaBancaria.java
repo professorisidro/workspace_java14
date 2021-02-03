@@ -59,10 +59,16 @@ public class ContaBancaria {
 	}
 	
 	public void creditar(double valor) {
+		if (valor <= 0 ) {
+			throw new ContaException("Valor invalido para crédito!");
+		}
 		saldo += valor;
 	}
 	
 	public boolean debitar(double valor){
+		if (valor <= 0) {
+			throw new ContaException("Valor invalido para débito");
+		}
 		if (saldo >= valor) {
 			saldo -= valor;
 			return true;
