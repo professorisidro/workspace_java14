@@ -1,4 +1,4 @@
-import java.util.InputMismatchException;
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 
 public class Principal {
@@ -14,18 +14,22 @@ public class Principal {
 		do {
 			try {
 				Produto p = new Produto();
-				System.out.print("Digite o ID:");
-				texto = teclado.nextLine();
+//				System.out.print("Digite o ID:");
+				//texto = teclado.nextLine();
+				texto = JOptionPane.showInputDialog("Digite o ID");
 				idUser = Integer.parseInt(texto);
 				p.setId(idUser);
 
-				System.out.print("Digite a Descricao:");
-				descUser = teclado.nextLine();
+//				System.out.print("Digite a Descricao:");
+//				descUser = teclado.nextLine();
+				descUser = JOptionPane.showInputDialog("Digite a Descricao");
 				p.setDescricao(descUser);
 
-				System.out.print("Digite o Preço:");
-				texto = teclado.nextLine();
+//				System.out.print("Digite o Preço:");
+//				texto = teclado.nextLine();
+				texto = JOptionPane.showInputDialog("Digite o preco");
 				precoUser = Double.parseDouble(texto.replace(",", "."));
+				
 				p.setPreco(precoUser);
 
 				System.out.println("Produto CADASTRADO");
@@ -42,7 +46,8 @@ public class Principal {
 				System.out.println("ERRO - " + ex.getMessage());
 				System.out.println("tipo="+ex.getClass().getName());
 			}
-
+			
+			
 		} while (opcao != 0);
 		teclado.close();
 	}

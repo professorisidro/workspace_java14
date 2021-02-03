@@ -16,7 +16,7 @@ public class Banco {
 //		c1.setNomeTitular("Professor Isidro");
 //		c1.setSaldo(0.0);
 		
-		/*do {
+		do {
 			System.out.println("Banco IsiTaú - Feito procê ");
 			System.out.println("Digite 1 - Deposito / 2 - Saque / 3 - Info / 0 - Encerrar");
 			opcao = teclado.nextInt();
@@ -48,10 +48,10 @@ public class Banco {
 			
 			
 		} while (opcao  != 0);
-		*/
 		
 		
-		ContaBancaria c2;
+		
+		/*ContaBancaria c2;
 		c1.creditar(1000.00);
 		c2 = new ContaBancaria(10021, 4, "Jose Louveira", "123.456.789-00");
 		
@@ -64,7 +64,7 @@ public class Banco {
 		System.out.println(c1.exibirInfo());
 		System.out.println(c2.exibirInfo());
 		
-		
+		*/
 		
 		
 		teclado.close();
